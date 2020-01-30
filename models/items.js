@@ -28,9 +28,10 @@ class Item {
         SELECT * FROM items
         `)
         .then(itemsData => {
-            const arrayOfInstances = itemsData.map(item => new Item(item.id, item.itemNum, item.binNum, item.title, item.vendor, item.vendorNum, item.qtyOnHand));
+            console.log(itemsData);
+            // const arrayOfInstances = itemsData.map(item => new Item(item.id, item.itemNum, item.binNum, item.title, item.vendor, item.vendorNum, item.qtyOnHand));
 
-            return arrayOfInstances;
+            // return arrayOfInstances;
         })
     };
 
